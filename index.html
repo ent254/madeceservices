@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+    <title>Madece services portfolio</title>
+</head>
+<body>
+    <header>
+        <div class="header_bx">
+            <nav>
+                <h4 class="logo">Comrades<span>corner</span></h4>
+                <div class="menu_hum">
+                    <ul id="menu">
+                        <li><a href="#header"><span></span><span></span><span></span>Home</a></li>
+                        <li><a href="#exp"><span></span><span></span><span></span>About us</a></li>
+                        <li><a href="#services"><span></span><span></span><span></span>Services</a></li>
+                        <li><a href="#portfolio"><span></span><span></span><span></span>Portfolio</a></li>
+                        <li><a href="#pricing"><span></span><span></span><span></span>Pricing</a></li>
+                        <li><a href="#contact"><span></span><span></span><span></span>Contact us</a></li>
+                    </ul>
+                    <i class="bi bi-three-dots" id="menu_btn"></i>                    
+                </div>
+
+               
+            </nav>
+            
+
+            <div class="btnn">
+            <button onclick="openpopup()">Login</button>
+            
+            <button onclick="openpopdown()">Sign up</button>
+            </div>
+            <div class="content">
+            <div class="cont_bx">
+                <h5>Hello pal<img src="img/smile.jpg" alt="smile"></h5>
+                <h1>Welcome  To</h1>
+                <h6>Madece <span>services</span></h6>
+                <p> We are a fast growing services provider dealing with typing services, Kra file returns, Helb application, Printing services, Laundry services(around Juja) and many more at a comrade's price </p> 
+                <button onclick="orderr()">Order service</button>
+                
+            </div>
+            <!----------order pop---------------------------->
+            <div class="redirect">
+                <h2>Hi pal<img src="img/smile.jpg"></h2>
+                <h5>To get the services please Login or sign up first </h5>
+                <h6>Thanks!</h6>
+            </div>
+            <div class="img_bx">
+                <marquee><img src="img/logo.jpeg" alt="Madece services logo"></marquee>
+            </div>
+            <!--weather start  -->
+            <div class="weather">
+                <div class="card">
+                    <img src="img/thumb.jpg" alt="Perfect">
+                    <p>Delivery</p>
+                    <h6>100%</h6>
+                </div>
+                <div class="card">
+                    <img src="img/bulb.jpg" alt="idea">
+                    <p>Skills</p>
+                    <h6>100%</h6>
+                </div>
+                <div class="card">
+                    <img src="img/fann.png" alt="active">
+                    <P>Status</P>
+                    <h6>Active</h6>
+                </div>
+            </div>
+            </div>
+            <!-----------------------login_menu---------------------------------->
+            <div class="formm" id="popup">
+                <form action="login.php" method="post">
+                    <h2>login here</h2>
+                    <label for="email">Email</label>
+                    <input type="txt" name="email" placeholder="Johnmax@gmail.com" required id="uss">
+            
+                    <label for="password">Password</label>
+                    <input type="password" name="password" placehoder="at least 6 values" required id="pass">
+                    
+                    <button class="btnnn" type="submit" name="submit">Login</button>
+                    <p class="link"> Don't have an account <br></p>
+                    <h5 ><a href="">sign up</a><span>here</span></h5>
+                    <div class="out" onclick="collapseout()">
+                        <h5>Collapse</h5>
+                     </div>
+                </form>
+                </div>
+
+                <!------------------Sign up------------------------->
+                <div class="formi" id="popdown">
+                    <form action="reg.php" method="post">
+                     <h2>Sign up here</h2>
+                    
+                   
+             
+                     <label for="email">Email</label>
+                     <input type="email" name="email" placeholder="johnmax@gmail.com" required id="us">
+                    
+                     <label for="password">Password</label>
+                     <input type="password" name="password" placehoder="" required id="pas1">
+             
+                     <button class="btnn" type="submit" name="submit" onclick="validation()">Signup</button>
+                     <p class="link"> Have an account <br></p>
+                     <h5><a href="" onclick="transfer()" >login</a><span>here</span></h5>
+                     <div class="out" onclick="collapse()">
+                        <h5>Collapse</h5>
+                     </div>
+                 </form>
+                </div>
+        </div>
+    </header>  
+    <div class="skill_bx" id="exp">
+        <div class="skill_img_bx">
+            <img src="img/direct.jpg" alt="direct" class="src">
+        </div>
+        <div class="skill_cont_bx">
+            <h6>About Us</h6>
+            <h2>Why we are the best <span></span><span></span><span></span></h2>
+            <p>Ever wanted your document done as fast as posible? <br>------------------------------------------------------------------------------------------<br>Ever wanted your work done but you are on low on budget? <br>------------------------------------------------------------------------------------------<br>Ever felt unsafe when giving out your documents for typing? <br>------------------------------------------------------------------------------------------<br> madece services offers the best quality work at an affordable comrade price. We do a fast delivery as our customers are our priority. We also take care of our customers documents with care as we dont disclose your information. Come get served with us and enjoy the final product.  </p>
+            
+            <div class="skill_progress_bar">
+                <div class="skill_progress_bar_box">
+                    <div class="lable">
+                        <h6>TS ||<span></span>Typing services </h6>
+                        <h6>98%</h6>
+
+                    </div>
+                    <h5 class="ani ani_jss"></h5>
+                </div>
+                <div class="skill_progress_bar_box">
+                    <div class="lable">
+                        <h6> printing services </h6>
+                        <h6>90%</h6>
+                    </div>
+                    <h5 class="ani ani_jss"></h5>
+                </div>
+                <div class="skill_progress_bar_box">
+                    <div class="lable">
+                        <h6>Filing returns</h6>
+                        <h6>85%</h6>
+                     </div>
+                    <h5 class="ani ani_jss"> </h5>
+                </div>
+                <div class="skill_progress_bar_box">
+                    <div class="lable">
+                        <h6>Helb application</h6>
+                        <h6>90%</h6>  </div>
+                    <h5 class="ani ani_jss"> </h5>
+                </div>
+                <div class="skill_progress_bar_box">
+                    <div class="lable">
+                        <h6>Pc games </h6>
+                        <h6>85%</h6>
+
+                    </div>
+                    <h5 class="ani ani_jss">
+                        
+                    </h5>
+                </div>
+                <div class="skill_progress_bar_box">
+                    <div class="lable">
+                        <h6>Laundry services</h6>
+                        <h6>93%</h6>
+
+                    </div>
+                    <h5 class="ani ani_jss">
+                        
+                    </h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="services" id="services">
+        <div class="head">
+            <h6>Services</h6>
+            <h3>Services Provided</h3>
+            <div class="spans">
+            <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="cards">
+            <div class="card">
+                 <img src="img/typing 1.jpeg">
+                 <h6>Typing services</h6>
+                 <p>Come get all your assignments, reports, surveys, CV, Resume and many others accurately at a cheap price.</p>
+            </div>
+            <div class="card">
+                 <img src="img/printing.jpg">
+                 <h6>Printing services</h6>
+                 <p>Get all your documents printed and binded accurately at a cheap price.</p>
+            </div>
+            <div class="card">
+                 <img src="img/helb (1).jpg">
+                 <h6>Helb application</h6>
+                 <p>Get helb loans both subsequent and first time application at a cheap price</p>
+            </div>
+            <div class="card">
+                 <img src="img/filee.png">
+                 <h6>Kra returns</h6>
+                 <p>File all your returns on kra .</p>
+            </div>
+            <div class="card">
+                <img src="img/laundry.jpg">
+                <h6>Laundry services</h6>
+                <p>We take care of dirty laundry and make them clean and give them a sweet fragrance </p>
+           </div>
+           <div class="card">
+                <img src="img/activate.jpg">
+                <h6>Window activation</h6>
+                <p>We activate your windows at a cheap price</p>
+           </div>
+           <div class="card">
+                <img src="img/ms activate.jpeg">
+                <h6>Microsoft activation</h6>
+                <p>Get your Microsoft office package activated so as to avoid buying another package at a cheap price</p>
+           </div>
+           <div class="card">
+                <img src="img/g d.jpeg">
+                <h6>Graphic design</h6>
+                <p>Get all your graphics and posts done at a cheap price .</p>
+           </div>
+           <div class="card">
+            <img src="img/laminatee.jpg">
+            <h6>Lamination</h6>
+            <p>Laminate all your documents to avoid document spoilage</p>
+           </div>
+           <div class="card">
+            <img src="img/pc g.png">
+            <h6>Pc gaming</h6>
+            <p>Get all your favorite pc games at a cheap price</p>
+           </div>
+
+            
+        </div>
+
+    </div>
+    <!-- Project Box start  -->
+    <div class="project" id="portfolio">
+        <div class="head">
+            <div class="l_bx">
+            <h6>Portfolio</h6>
+            <h3>latest projects</h3>
+            <div class="spans">
+            <span></span><span></span><span></span>
+            </div>
+            </div>
+            <div class="r_bx">
+                <i class="bi bi-caret-left-fill"  id="left_scroll_p"></i>
+                <i class="bi bi-caret-right-fill" id="right_scroll_p"></i>
+            </div>
+        </div>
+        <div class="cards" id="project_cards">
+            <div class="card">
+                <img src="img/madece services.jpeg">
+                <div class="cont">
+                  <h5>Graphic design</h5>
+                <p>A graphic design of our business post</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/Free.png">
+                <div class="cont">
+                    <h5>Graphic design</h5>
+                  <p>Youtube thumbnail on madece entertainment</p>
+                  </div>
+            </div>
+            <div class="card">
+                <video autoplay muted loop><source src="img/madece.mp4" type="video/mp4"></video>
+                <div class="cont">
+                    <h5>Graphic design</h5>
+                  <p>Our business advert video</p>
+                  </div>
+            </div>
+            <div class="card">
+                <img src="img/graphics 1.jpg">
+                <div class="cont">
+                    <h5>Graphic design</h5>
+                  <p>Project post design</p>
+                  </div>
+            </div>
+            <div class="card">
+                <img src="img/graphic 2.jpg">
+                <div class="cont">
+                    <h5>Graphic design</h5>
+                  <p>Regular valentines post</p>
+                  </div>
+            </div>
+        </div>
+    </div>
+    <!--Pricing Box Start-->
+    <div class="pricing" id="pricing">
+        <div class="head">
+            <h6>Pricing</h6>
+            <h3>Services Provided</h3>
+            <div class="spans">
+            <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="cards">
+            <div class="card">
+                <h5>Laundry</h5>
+                <h2>ksh.40</h2>
+                <p>Per 1Kg  </p>
+                <h6>Cloths will be delivered as fast as they are finished been worked on</h6>
+                <button>Buy service</button>
+            </div>
+            <div class="card">
+                <h5>Kra returns</h5>
+                <h2>ksh.70 - kshs.500</h2>
+                <p>Per head </p>
+                <h6> Depends on the type of filling you need. can be either nil or employed </h6>
+                <button>Buy service</button>
+            </div>
+            <div class="card">
+                <h5>Typing services</h5>
+                <h2>ksh.10 - ksh.50</h2>
+                <p>Per page </p>
+                <h6>Depends on from which source the work is typed from.</h6>
+                <button>Buy service</button>
+            </div>
+            <div class="card">
+                <h5>Printing</h5>
+                <h2>ksh.5 - Ksh.40</h2>
+                <p>Per page  </p>
+                <h6>Ranges from the type of printing one wants. Can be either colored or B & W</h6>
+                <button>Buy service</button>
+            </div>
+            <div class="card">
+                <h5>Helb application</h5>
+                <h2>ksh.400</h2>
+                <p>Per head </p>
+                <h6>All the services will be offered in the application</h6>
+                <button>Buy service</button>
+            </div>
+            <div class="card">
+                <h5>Windows activation</h5>
+                <h2>ksh.150</h2>
+                <p>Per activation</p>
+                <h6>Windows activation is done fully and also restored</h6>
+                <button>Buy service</button> 
+            </div>
+            <div class="card">
+                <h5>Microsoft activation</h5>
+                <h2>ksh.150</h2>
+                <p>Per activation</p>
+                <h6>All Microsoft packages are activated</h6>
+                <button>Buy service</button>
+            </div>
+            <div class="card">
+                <h5>Graphic design</h5>
+                <h2>ksh.200 - ksh.400</h2>
+                <p>Per graphic</p>
+                <h6>Depends on the type of graphic design one wants.</h6>
+                <button>Buy service</button>
+            </div>
+            <div class="card">
+                <h5>Lamination</h5>
+                <h2>ksh.70 - ksh.200</h2>
+                <p>Per laminate</p>
+                <h6>Depends on the type of paper used</h6>
+                <button>Buy service</button>
+            </div>
+            <div class="card">
+                <h5>Pc games</h5>
+                <h2>ksh.100 - ksh.500</h2>
+                <p>Per game</p>
+                <h6>Depends on the game type on wants</h6>
+                <button>Buy service</button>
+            </div>
+         </div>
+
+
+    <!--Testmonial Start-->
+
+    <div class="testmonial">
+        <div class="head">
+            <h6>testmonial</h6>
+            <h3>Clients feedback</h3>
+            <div class="spans">
+            <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="cards">
+             <div class="card">
+                <div class="img_bx">
+                    <img src="img/testmo/t.jpg" alt="" class="c_img" >
+                </div>
+                <div class="content">
+                    <div class="h5_star">
+                        <h5 class="c_title">Tom</h5>
+                        <div class="star">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-half"></i>
+                        </div>
+                    </div>
+                    <p class="c_subtitle">They typed my documents with much expertise without any error</p>
+                    <h6 class="c_sub">Typing service</h6>
+                </div>
+             </div>
+             <div class="card">
+                <div class="img_bx">
+                    <img src="img/testmo/i.jpg" alt="" class="c_img" >
+                </div>
+                <div class="content">
+                    <div class="h5_star">
+                        <h5 class="c_title">Ivy</h5>
+                        <div class="star">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                    </div>
+                    <p class="c_subtitle">Helped me to file my nil returns</p>
+                    <h6>Kra returns</h6>
+                </div>
+             </div>
+             <div class="card">
+                <div class="img_bx">
+                    <img src="img/testmo/e.jpg" alt="" class="c_img">
+                </div>
+                <div class="content">
+                    <div class="h5_star">
+                        <h5 class="c_title">Emmanuel</h5>
+                        <div class="star">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-half"></i>
+                        </div>
+                    </div>
+                    <p class="c_subtitle">They are fast and reliabe when needed</p>
+                    <h6>Laundry</h6>
+                </div>
+             </div>
+             <div class="card">
+                <div class="img_bx">
+                    <img src="img/testmo/n.jpg" alt="" class="c_img">
+                </div>
+                <div class="content">
+                    <div class="h5_star">
+                        <h5 class="c_title">Noel</h5>
+                        <div class="star">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-half"></i>
+                        </div>
+                    </div>
+                    <p class="c_subtitle">Always updated with the latest pc games</p>
+                    <h6>PC gaming</h6>
+                </div>
+             </div>
+             <div class="card">
+                <div class="img_bx">
+                    <img src="img/testmo/i.jpg" alt="" class="c_img">
+                </div>
+                <div class="content">
+                    <div class="h5_star">
+                        <h5 class="c_title">Immaculate</h5>
+                        <div class="star">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-half"></i>
+                        </div>
+                    </div>
+                    <p class="c_subtitle">Thanks alot almost bought a new laptop</p>
+                    <h6>Microsoft activation</h6>
+                </div>
+             </div>
+             <div class="card">
+                <div class="img_bx">
+                    <img src="img/testmo/z.jpg" alt="" class="c_img">
+                </div>
+                <div class="content">
+                    <div class="h5_star">
+                        <h5 class="c_title">Zeddy</h5>
+                        <div class="star">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-half"></i>
+                        </div>
+                    </div>
+                    <p class="c_subtitle">designed my youtube thumbnail wonderfully</p>
+                    <h6>Graphic design</h6>
+                </div>
+             </div>
+        
+        </div>
+         
+            
+            
+        <div class="change_data">
+            <h6 class="change_d"></h6>
+            <h6 class="change_d"></h6>
+            <h6 class="change_d"></h6>
+            <h6 class="change_d"></h6>
+            <h6 class="change_d"></h6>
+            <h6 class="change_d"></h6>
+        </div>
+    
+    </div>
+    
+    <div class="client_data">
+        <div class="cards">
+            <div class="card">
+                <i class="bi bi-check-circle"></i>
+                <div class="cont">
+                    <h6>300+</h6>
+                    <p>Documents typed</p>
+                </div>
+            </div>    
+            <div class="card">
+                <i class="bi bi-people"></i>
+                <div class="cont">
+                    <h6>30+</h6>
+                    <p>Client Active</p>
+                </div>
+            </div>    
+            <div class="card">
+                <i class="bi bi-shield-check"></i>
+                <div class="cont">
+                    <h6>60+</h6>
+                    <p>Project Active</p>
+                </div>
+            </div>    
+            <div class="card">
+                <i class="bi bi-diagram-3-fill"></i>
+                <div class="cont">
+                    <h6>20+</h6>
+                    <p>Team members</p>
+                </div>
+            </div>    
+            <div class="card">
+                <i class="bi bi-people-fill"></i>
+                <div class="cont">
+                    <h6>50+</h6>
+                    <p>Fixed Clients</p>
+                </div>
+            </div>  
+        </div>   
+    </div>
+
+    <div class="mind_bx">
+        <div class="card">
+            <div class="cont">
+            <h4>Have you any project in mind</h4>
+            <div class="spans">
+            <span></span><span></span><span></span>
+            </div>
+            <p>We are always ready to receive any project offers as our customers are our priority. We also provide guidelines for works in our services part</p>
+            </div>
+            
+            <div class="btn">
+        <button>Inform Us</button>
+            </div>
+        </div>
+         </div>
+        </div>
+
+        <footer id="contact">
+            <h6>Comrades<span>corner</span></h6>
+            <div class="social">
+                <a href="">
+                    <i class="bi bi-facebook"></i>
+                </a>
+                <a href="">
+                    <i class="bi bi-instagram"></i>
+                </a>
+                <a href="">
+                    <i class="bi bi-twitter"></i>
+                </a>
+                <a href="">
+                    <i class="bi bi-telegram"></i>
+                </a>
+                <a href="">
+                    <i class="bi bi-youtube"></i>
+                </a>
+                
+            </div>
+            <h4>karurimark2002@gmail.com</h4>
+            <ul>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#exp">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
